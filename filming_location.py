@@ -82,6 +82,7 @@ def create_map(film_location: list, your_location: list):
     if not (isinstance(film_location, list) and isinstance(your_location, list)):
         return
     if not film_location:
+        print("Sorry, no film founds")
         return
     if any(not isinstance(i, float) for i in your_location):
         return
